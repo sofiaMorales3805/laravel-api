@@ -45,3 +45,17 @@ php artisan migrate
 # 6) Arrancar el servidor
 php artisan serve
 # -> http://127.0.0.1:8000
+
+
+
+📚 Endpoints
+
+Base URL: http://127.0.0.1:8000/api
+
+Método	Ruta	Descripción	Body (JSON)
+GET	/ping	Health check	—
+GET	/clients	Listar clientes	—
+POST	/clients	Crear cliente	{"first_name","last_name","email","nit"}
+GET	/clients/{id}	Ver cliente por id	—
+PUT	/clients/{id}	Actualizar cliente	{"first_name","last_name","email","nit"}
+DELETE	/clients/{id}	Eliminar cliente	—
